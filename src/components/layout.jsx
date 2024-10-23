@@ -5,7 +5,7 @@ import CartTab from './cartTab'
 
 const Layout = () => {
   return (
-    <div className='bg-lime-300'>
+    <div className='bg-slate-300'>
       <main className='w-[1200px] max-w-full m-auto p-5'>
         <Header />
         <Outlet />
