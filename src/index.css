@@ -13,5 +13,8 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    monospace; }
+
+.first-letter-capitalized::first-letter {
+      text-transform: uppercase;
+    }

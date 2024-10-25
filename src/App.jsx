@@ -4,17 +4,22 @@ import Home from './pages/home'
 import Detail from './pages/detail'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
+import { ProductProvider } from './components/productContext'; 
+// import Product from './product';
+
 
 function App() {
   return (
-    <BrowserRouter> 
-      <Routes>
-        <Route path='/' element={<Layout />}> 
-         <Route index element={<Home />} />
-         <Route path='/:id' element={<Detail />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ProductProvider> 
+      <BrowserRouter> 
+        <Routes>
+          <Route path='/' element={<Layout />}> 
+          <Route index element={<Home />} />
+          <Route path='product/:id' element={ <Detail /> } />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ProductProvider>
   );
 }
 
