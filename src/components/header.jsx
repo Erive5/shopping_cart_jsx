@@ -20,7 +20,10 @@ const Header = () => {
 
   return (
     <header className='bg-slate-500 flex justify-between items-center mb-5 p-10 rounded-md'>
-      <Link to='/' className='text-3xl font-bold text-slate-100'>Home</Link>
+      <Link to='/' className='text-3xl font-bold text-slate-100'>
+      <i class="fa-solid fa-house p-3"></i> 
+      Home
+      </Link>
       <div className='w-10 h-10 bg-gray-100 rounded-full flex justify-center items-center relative'
       onClick={handleOpenTabCart}>
         <i className="fa-solid fa-cart-shopping fa-lg"></i>
